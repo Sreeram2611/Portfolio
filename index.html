@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sreeram Portfolio | CyberSec Student</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">&lt;Sree_Secures/&gt;</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact" class="btn-primary">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="accent-text">Hi, my name is</p>
+            <h1 class="glitch" data-text="Sreeram Palani.">Sreeram Palani.</h1>
+            
+            <h2>I am a <span class="typewriter"></span></h2>
+            
+            <p class="bio-text">
+                I break systems to make them stronger. Focused on <span class="highlight">Network Security</span> and full-stack web development.
+            </p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn-outline">View Work</a>
+                <a href="#contact" class="btn-primary">Get In Touch</a>
+                <div class="hero-socials">
+            <a href="https://github.com/Sreeram2611" target="_blank" rel="noopener noreferrer" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sreeramsp/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:sreeramsp06@gmail.com" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2 class="section-title"><span class="number">01.</span> About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hello! I'm a student currently diving deep into the world of zeros and ones. My interest in hacking started when I tried to figure out how the internet actually works.</p>
+                <p>Fast-forward to today, I'm in my second year of college, learning about <span class="highlight">Penetration Testing</span>, <span class="highlight">Cryptography</span>, and building responsive websites.</p>
+            </div>
+            <div class="about-img">
+                <div class="img-wrapper">
+                     <img src="Assets/Profile Photo/sreeram.png" alt="Profile Picture">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <h2 class="section-title"><span class="number">02.</span> Where I've Worked</h2>
+    <div class="experience-container">
+    <div class="exp-tabs">
+        <button class="tab-btn active" data-target="#exp-work">Freelance</button>
+        <button class="tab-btn" data-target="#exp-hack">Hackathons</button> 
+        <button class="tab-btn" data-target="#exp-club">Communities</button>
+    </div>
+
+    <div class="exp-content-wrapper">
+        <div id="exp-work" class="exp-panel active">
+    
+    <div class="exp-item">
+        <h3>Frontend Developer <span class="highlight">@ Creative Lens Studio</span></h3>
+        <p class="exp-date">June 2023 - Aug 2023</p>
+        <ul>
+            <li>Designed a responsive portfolio website using HTML, CSS, and JS, improving page load speed by 30%.</li>
+            <li>Implemented basic SEO strategies, resulting in a 20% increase in local search visibility.</li>
+        </ul>
+    </div>
+
+    <hr class="exp-divider">
+
+    <div class="exp-item">
+        <h3>Web Security Assistant <span class="highlight">@ Local E-commerce</span></h3>
+        <p class="exp-date">Jan 2024 - Feb 2024</p>
+        <ul>
+            <li>Performed a vulnerability scan on a WordPress client site and patched 3 critical plugins.</li>
+            <li>Configured SSL certificates and set up a Web Application Firewall (WAF) to block bot traffic.</li>
+        </ul>
+    </div>
+
+</div>
+        
+        <div id="exp-hack" class="exp-panel">
+            
+            <div class="exp-item">
+                <h3>Winner <span class="highlight">@ National Cyber Hackathon</span></h3>
+                <p class="exp-date">Nov 2023</p>
+                <ul>
+                    <li>Developed a Python script to automate packet analysis.</li>
+                    <li>Placed in the Top 10 out of 50 teams.</li>
+                </ul>
+            </div>
+
+            <hr class="exp-divider"> <div class="exp-item">
+                <h3>Runner Up <span class="highlight">@ HackTheBox Uni CTF</span></h3>
+                <p class="exp-date">Aug 2023</p>
+                <ul>
+                    <li>Solved 15/20 challenges in the Forensics category.</li>
+                </ul>
+            </div>
+
+        </div>
+        <div id="exp-club" class="exp-panel">
+    
+    <div class="exp-item">
+        <h3>Security Analyst Lead <span class="highlight">@ College CyberSec Club</span></h3>
+        <p class="exp-date">Jan 2024 - Present</p>
+        <ul>
+            <li>Leading a team of 10 students in weekly Capture The Flag (CTF) simulations using HackTheBox.</li>
+            <li>Managed the club's internal network setup (Linux/Kali), ensuring secure communication channels for competitions.</li>
+        </ul>
+    </div>
+
+    <hr class="exp-divider">
+
+    <div class="exp-item">
+        <h3>Workshop Instructor <span class="highlight">@ Campus Tech Fest</span></h3>
+        <p class="exp-date">Sept 2023</p>
+        <ul>
+            <li>Organized and taught a workshop on "Intro to Linux & Bash Scripting" attended by 50+ students.</li>
+            <li>Created documentation and cheat sheets for students to learn command-line basics.</li>
+        </ul>
+    </div>
+
+</div>
+        
+        </div>
+</div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2 class="section-title"><span class="number">03.</span> My Tech Stack</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>Frontend</h3>
+                <p>HTML, CSS, JavaScript, React</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Security</h3>
+                <p>Linux (Kali), Wireshark, Nmap, Burp Suite</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-python"></i>
+                <h3>Scripting</h3>
+                <p>Python, Bash, SQL</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-connectdevelop"></i>
+                <h3>Soft Skills</h3>
+                <p>Linux (Kali), Wireshark, Nmap, Burp Suite</p>
+            </div>
+        </div>
+    </section>
+    <section id="certifications" class="section">
+    <h2 class="section-title"><span class="number">04.</span> Certifications</h2>
+    
+    <div class="cert-grid">
+        
+        <div class="cert-card">
+            <div class="cert-header">
+                <i class="fas fa-certificate cert-icon"></i>
+                <div class="cert-info">
+                    <h3>Apoorv CTF Certificate</h3>
+                    <p>Issued: Mar 2025</p>
+                </div>
+            </div>
+            <div class="cert-body">
+                <p class="cert-issuer">IIIT Kottayam</p>
+                <a href="Assets/certificates/CTF Certificate.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
+                    View Certificate <i class="far fa-file-pdf"></i>
+                </a>
+            </div>
+        </div>
+          <div class="cert-card">
+            <div class="cert-header">
+                <i class="fas fa-award cert-icon"></i>
+                <div class="cert-info">
+                    <h3>Mentorship Certificate</h3>
+                    <p>Issued: Feb 2025</p>
+                </div>
+            </div>
+            <div class="cert-body">
+                <p class="cert-issuer">SRMIST Trichy</p>
+                <a href="assets/certificates/Mentorship Certificate.jpg" target="_blank" rel="noopener noreferrer" class="cert-link">
+                    View Certificate <i class="far fa-image"></i>
+                </a>
+            </div>
+        </div>
+
+         <div class="cert-card">
+            <div class="cert-header">
+                <i class="fas fa-award cert-icon"></i>
+                <div class="cert-info">
+                    <h3>Cyber Security Internship</h3>
+                    <p>Issued: Jul 2025</p>
+                </div>
+            </div>
+            <div class="cert-body">
+                <p class="cert-issuer">Prodigy InfoTech</p>
+                <a href="https://prodigyinfotech.dev/verify?cin=PIT/JUN25/03013" target="_blank" rel="noopener noreferrer" class="cert-link">
+                    View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </div>
+   
+        <div class="cert-card">
+            <div class="cert-header">
+                <i class="fas fa-terminal cert-icon"></i>
+                <div class="cert-info">
+                    <h3>Java Programming for Beginners</h3>
+                    <p>Issued: Nov 2025</p>
+                </div>
+            </div>
+            <div class="cert-body">
+                <p class="cert-issuer">Coursera : IBM</p>
+                <a href="https://www.coursera.org/account/accomplishments/verify/H4QKZRESFWUH" target="_blank" rel="noopener noreferrer" class="cert-link">
+                    View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </div>
+
+                <div class="cert-card hidden-cert">
+            <div class="cert-header">
+                <i class="fas fa-terminal cert-icon"></i>
+                <div class="cert-info">
+                    <h3>Data Structures and Algorithms</h3>
+                    <p>Issued: Nov 2025</p>
+                </div>
+            </div>
+            <div class="cert-body">
+                <p class="cert-issuer">Coursera : Microsoft</p>
+                <a href="https://www.coursera.org/account/accomplishments/verify/PD29OZEHSWAK" target="_blank" rel="noopener noreferrer" class="cert-link">
+                    View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </div>
+
+                <div class="cert-card hidden-cert">
+            <div class="cert-header">
+                <i class="fas fa-shield-virus cert-icon"></i>
+                <div class="cert-info">
+                    <h3>Cybersecurity Awareness: Ransomware</h3>
+                    <p>Issued: Feb 2025</p>
+                </div>
+            </div>
+            <div class="cert-body">
+                <p class="cert-issuer">LinkedIn Learning</p>
+                <a href="Assets/certificates/CertificateOfCompletion Ransomware.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
+                    View Certificate <i class="far fa-file-pdf"></i>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="cert-card hidden-cert">
+            <div class="cert-header">
+                <i class="fas fa-certificate cert-icon"></i>
+                <div class="cert-info">
+                    <h3>Introduction to Object-Oriented Programming in C++</h3>
+                    <p>Issued: May 2025</p>
+                </div>
+            </div>
+            <div class="cert-body">
+                <p class="cert-issuer">Coursera : University of London</p>
+                <a href="https://www.coursera.org/account/accomplishments/verify/2214DKKCLMQL" target="_blank" rel="noopener noreferrer" class="cert-link">
+                    View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </div>
+
+         <div class="cert-card hidden-cert">
+            <div class="cert-header">
+                <i class="fas fa-certificate cert-icon"></i>
+                <div class="cert-info">
+                    <h3>MongoDB Basics for Students</h3>
+                    <p>Issued: Jul 2025</p>
+                </div>
+            </div>
+            <div class="cert-body">
+                <p class="cert-issuer">MongoDB</p>
+                <a href="https://learn.mongodb.com/c/35zO4oqGQJCdPgNIa3vuxQ" target="_blank" rel="noopener noreferrer" class="cert-link">
+                    View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+        </div>
+       
+    </div>
+
+    <div style="text-align: center; margin-top: 30px;">
+        <button id="load-more-certs-btn" class="btn-outline">Show More Certs</button>
+    </div>
+</section>
+
+    <section id="projects" class="section">
+        <h2 class="section-title"><span class="number">05.</span> Projects</h2>
+        <div class="project-grid">
+            
+            <div class="project-card hidden">
+                <div class="project-header">
+                    <i class="far fa-folder open-folder"></i>
+                    <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="https://srmcalc.vercel.app" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <h3>SRM Academic Calculator</h3>
+                <p>An easy-to-use site I created for quick and accurate GPA/CGPA calculations and Grade Prediction.</p>
+                <ul class="tech-list">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+
+            <div class="project-card hidden">
+                <div class="project-header">
+                    <i class="far fa-folder open-folder"></i>
+                    <div class="project-links">
+                        <a href="https://github.com/Sreeram2611/Online-Resume-Builder-v2.0" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="https://resumebuilderstudio.vercel.app/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <h3>Online Resume Builder v2.0</h3>
+                <p>A serverless web application for generating professional PDF resumes with live preview and mobile-optimized editing.</p>
+                <ul class="tech-list">
+                    <li>HTML CSS</li>
+                    <li>FileReader API</li>
+                    <li>Vanilla JavaScript</li>
+                </ul>
+            </div>
+
+            <div class="project-card hidden">
+                <div class="project-header">
+                    <i class="far fa-folder open-folder"></i>
+                    <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <h3>Portfolio Website</h3>
+                <p>The site you are looking at right now. Built to be responsive, accessible, and fast.</p>
+                <ul class="tech-list">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+
+            <div class="project-card hidden-project">
+                <div class="project-header">
+                    <i class="far fa-folder open-folder"></i>
+                    <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+
+                    </div>
+                </div>
+                <h3>Steganography Tool</h3>
+                <p>A Python CLI tool that hides secret text messages inside image files using LSB manipulation.</p>
+                <ul class="tech-list">
+                    <li>Python</li>
+                    <li>Pillow</li>
+                    <li>Cryptography</li>
+                </ul>
+            </div>
+
+            <div class="project-card hidden-project">
+                <div class="project-header">
+                    <i class="far fa-folder open-folder"></i>
+                    <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <h3>Password Manager</h3>
+                <p>A secure local password manager that encrypts credentials using AES-256 before storage.</p>
+                <ul class="tech-list">
+                    <li>Python</li>
+                    <li>SQLite</li>
+                    <li>Fernet</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <button id="load-more-btn" class="btn-outline">Show More</button>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <h2 class="section-title"><span class="number">06.</span> What's Next?</h2>
+        <h1 class="big-heading">Get In Touch</h1>
+        <p class="contact-desc">
+            I am currently looking for internships and new opportunities to learn. Whether you have a question or just want to say hi, my inbox is open!
+        </p>
+        <a href="mailto:sreeramsp06@gmail.com" class="btn-primary big-btn">Say Hello</a>
+        
+        <div class="socials">
+            <a href="https://github.com/Sreeram2611" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sreeramsp/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Designed & Built by Sreeram Palani</p>
+        COPYRIGHT &copy; 2026 Sreeram Palani.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
