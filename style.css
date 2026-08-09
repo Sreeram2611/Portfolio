@@ -311,11 +311,21 @@ section {
 
 .tech-list {
     display: flex;
-    gap: 15px;
+    flex-wrap: wrap; /* Allows elegant wrapping if a project has many technologies */
+    gap: 10px; /* Replaces old gap math with a clean, flexible layout grid padding */
     list-style: none;
     font-family: var(--font-mono);
     font-size: 0.8rem;
-    color: var(--text-secondary);
+    color: var(--accent); /* Shifts text color to your accent tone to catch the eye */
+}
+
+/* New box containers for each individual skill element inside your project grid */
+.tech-list li {
+    border: 1px solid var(--accent); /* Clear, sharp box boundary wrapper */
+    padding: 4px 10px;
+    border-radius: 4px;
+    background: rgba(100, 255, 218, 0.02); /* Very subtle layout tint fill */
+    white-space: nowrap; /* Keeps tools like 'FileReader API' cleanly inside one line box */
 }
 
 /* --- Contact & Footer --- */
@@ -729,4 +739,171 @@ body {
 .hidden-project, .hidden-cert {
     display: none;
     animation: fadeIn 0.5s ease-in-out; 
+}
+
+/* Recruiter Sticky Toolbar */
+.recruiter-bar {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(17, 34, 64, 0.9);
+    border: 1px solid var(--accent);
+    backdrop-filter: blur(8px);
+    padding: 12px 24px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    z-index: 1000;
+    box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
+}
+
+.recruiter-bar p {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--text-primary);
+}
+
+.bar-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.bar-btn {
+    padding: 6px 14px;
+    font-size: 0.8rem;
+    font-family: var(--font-mono);
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bar-btn.contact {
+    background: var(--accent);
+    color: var(--bg-color);
+}
+.bar-btn.contact:hover {
+    background: #fff;
+    color: var(--bg-color);
+}
+
+.bar-btn.resume {
+    border: 1px solid var(--text-secondary);
+    color: var(--text-secondary);
+}
+.bar-btn.resume:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+/* Hide on mobile screen profiles to preserve screen canvas space */
+@media (max-width: 768px) {
+    .recruiter-bar {
+        display: none;
+    }
+}
+/* --- Fix Footer Overlap Bug on Main Page --- */
+footer {
+    /* Existing parameters kept */
+    text-align: center;
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    
+    /* NEW: Pushes the text up so it sits cleanly above the sticky bar */
+    padding: 40px 20px 100px 20px; 
+}
+
+/* Ensure smooth integration if you use a sticky hotbar on the index page */
+@media (max-width: 768px) {
+    footer {
+        /* If the recruiter bar hides on mobile, reset padding to look snug */
+        padding: 30px 20px;
+    }
+}
+.skill-card {
+    background: var(--light-bg);
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid rgba(100, 255, 218, 0.1); /* Subtle, sleek boundary outline */
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent); /* Lights up with your Neon Cyan on hover */
+    box-shadow: 0 8px 20px -12px rgba(100, 255, 218, 0.2);
+}
+/* --- Core Tech Stack Box Containers --- */
+.skills-box-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    margin-top: 12px;
+    padding: 0;
+}
+
+.skills-box-list li {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--accent); /* Keep the text neon cyan */
+    border: none; /* Remove the outline completely */
+    padding: 6px 12px;
+    border-radius: 4px;
+    background: rgba(100, 255, 218, 0.07); /* Slightly stronger background tint */
+}
+
+/* Faintly illuminate the box background when hovering over the card */
+.skill-card:hover .skills-box-list li {
+    background: rgba(100, 255, 218, 0.05);
+}
+.skill-card {
+    /* Your existing CSS properties */
+    display: flex;
+    flex-direction: column;
+}
+/* --- Optimized Grid Layout Engine --- */
+.skills-grid {
+    display: grid;
+    /* Automatically handles rows and wraps cleanly on mobile screens */
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    gap: 24px; /* Gives the cards uniform breathing room between each other */
+    margin-top: 30px;
+}
+
+/* --- Premium Polished Skill Card --- */
+.skill-card {
+    background: var(--light-bg);
+    padding: 30px 24px; /* Increased interior spacing so content never feels squished */
+    border-radius: 6px; /* Slightly smoother corners */
+    border: 1px solid rgba(100, 255, 218, 0.1);
+    
+    /* Crucial Fix: Forces all cards in a row to maintain identical vertical heights */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+    box-shadow: 0 12px 30px -15px rgba(100, 255, 218, 0.15); /* Faint ambient neon glow underneath */
+}
+
+/* --- Layout Spacing for Icons and Titles --- */
+.skill-card i {
+    font-size: 2.2rem; /* Slightly larger, crisp icon scaling */
+    color: var(--accent);
+    margin-bottom: 16px; /* Uniform distance to the title below */
+}
+
+.skill-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 16px; /* Equal spacing before the boxed lists begin */
+    letter-spacing: -0.3px;
 }

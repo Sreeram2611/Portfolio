@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Archive | Sreeram Palani</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="project-style.css">
+</head>
+<body>
+
+    <div class="page-container">
+        <a href="index.html#projects" class="back-link">
+            <i class="fas fa-arrow-left"></i> Back to Portfolio
+        </a>
+
+        <header class="page-header">
+            <h1 class="glitch" data-text="Projects Archive">Projects Archive</h1>
+            <p class="subtitle">A complete, categorized directory of systems I have built, configured, or secured.</p>
+        </header>
+
+        <div class="filter-wrapper">
+            <button class="filter-btn active" data-filter="all">
+                <i class="fas fa-terminal"></i> All Projects
+            </button>
+            <button class="filter-btn" data-filter="cybersec">
+                <i class="fas fa-shield-alt"></i> Cybersecurity
+            </button>
+            <button class="filter-btn" data-filter="web-dev">
+                <i class="fas fa-code"></i> Web Development
+            </button>
+        </div>
+
+        <main class="project-grid">
+
+            <div class="project-card" data-category="web-dev">
+                <div class="card-inner">
+                    <div class="project-header">
+                        <i class="far fa-folder open-folder"></i>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://srmcalc.vercel.app" target="_blank" rel="noopener noreferrer" title="Live Site"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">SRM Academic Calculator</h3>
+                    <p class="project-desc">An easy-to-use site I created for quick and accurate GPA/CGPA calculations and Grade Prediction.</p>
+                    <ul class="tech-list">
+                        <li class="tech-tag">HTML5</li>
+                        <li class="tech-tag">CSS3</li>
+                        <li class="tech-tag">JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web-dev">
+                <div class="card-inner">
+                    <div class="project-header">
+                        <i class="far fa-folder open-folder"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/Sreeram2611/Online-Resume-Builder-v2.0" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://resumebuilderstudio.vercel.app/" target="_blank" rel="noopener noreferrer" title="Live Site"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Online Resume Builder v2.0</h3>
+                    <p class="project-desc">A serverless web application for generating professional PDF resumes with live preview and mobile-optimized editing.</p>
+                    <ul class="tech-list">
+                        <li class="tech-tag">HTML CSS</li>
+                        <li class="tech-tag">FileReader API</li>
+                        <li class="tech-tag">Vanilla JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="cybersec">
+                <div class="card-inner">
+                    <div class="project-header">
+                        <i class="far fa-folder open-folder"></i>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" title="Live Link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Steganography Tool</h3>
+                    <p class="project-desc">A Python CLI tool that hides secret text messages inside image files using LSB manipulation.</p>
+                    <ul class="tech-list">
+                        <li class="tech-tag">Python</li>
+                        <li class="tech-tag">Pillow</li>
+                        <li class="tech-tag">Cryptography</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="cybersec">
+                <div class="card-inner">
+                    <div class="project-header">
+                        <i class="far fa-folder open-folder"></i>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" title="Live Link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Password Manager</h3>
+                    <p class="project-desc">A secure local password manager that encrypts credentials using AES-256 before storage.</p>
+                    <ul class="tech-list">
+                        <li class="tech-tag">Python</li>
+                        <li class="tech-tag">SQLite</li>
+                        <li class="tech-tag">Fernet</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="web-dev">
+                <div class="card-inner">
+                    <div class="project-header">
+                        <i class="far fa-folder open-folder"></i>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" title="Live Link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Portfolio Website</h3>
+                    <p class="project-desc">The site you are looking at right now. Built to be responsive, accessible, and fast.</p>
+                    <ul class="tech-list">
+                        <li class="tech-tag">HTML5</li>
+                        <li class="tech-tag">CSS3</li>
+                        <li class="tech-tag">JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <div class="recruiter-bar">
+        <p><i class="fas fa-terminal text-accent"></i> Let's connect:</p>
+        <div class="bar-actions">
+            <a href="mailto:sreeramsp06@gmail.com" class="bar-btn contact"><i class="fas fa-envelope"></i> Email Me</a>
+            <a href="https://www.linkedin.com/in/sreeramsp/" target="_blank" class="bar-btn resume"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </div>
+
+    <script src="project-script.js"></script>
+    <footer class="page-footer">
+    COPYRIGHT &copy; 2026 Sreeram Palani.
+</footer>
+</body>
+</html>

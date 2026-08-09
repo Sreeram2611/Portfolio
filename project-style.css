@@ -1,0 +1,313 @@
+/* --- Variables & Reset --- */
+:root {
+    --bg-color: #0a192f;
+    --light-bg: #112240;
+    --text-primary: #ccd6f6;
+    --text-secondary: #8892b0;
+    --accent: #64ffda; /* Neon Cyan */
+    --accent-glow: rgba(100, 255, 218, 0.1);
+    
+    --font-mono: 'Fira Code', monospace;
+    --font-sans: 'Outfit', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal break slips completely */
+    
+    background-image: 
+        linear-gradient(rgba(10, 25, 47, 0.95), rgba(10, 25, 47, 0.95)),
+        linear-gradient(0deg, transparent 24%, rgba(100, 255, 218, .03) 25%, rgba(100, 255, 218, .03) 26%, transparent 27%, transparent 74%, rgba(100, 255, 218, .03) 75%, rgba(100, 255, 218, .03) 76%, transparent 77%, transparent), 
+        linear-gradient(90deg, transparent 24%, rgba(100, 255, 218, .03) 25%, rgba(100, 255, 218, .03) 26%, transparent 27%, transparent 74%, rgba(100, 255, 218, .03) 75%, rgba(100, 255, 218, .03) 76%, transparent 77%, transparent);
+    background-size: 50px 50px;
+}
+
+.page-container {
+    padding: clamp(40px, 6vw, 80px) clamp(16px, 4vw, 50px);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Return Interface */
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--accent);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    text-decoration: none;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+.back-link:hover {
+    transform: translateX(-5px);
+}
+
+/* Headers */
+.page-header {
+    margin-bottom: 40px;
+}
+.page-header h1 {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.subtitle {
+    color: var(--text-secondary);
+    max-width: 600px;
+    font-size: clamp(0.9rem, 2vw, 1.05rem);
+}
+
+/* --- Optimized Dynamic Filter wrapper --- */
+.filter-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Allows text items to wrap instead of side-scrolling offscreen */
+    gap: 12px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--light-bg);
+    padding-bottom: 20px;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 1px solid transparent;
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+.filter-btn:hover {
+    color: var(--accent);
+    background: var(--accent-glow);
+}
+.filter-btn.active {
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    background: rgba(100, 255, 218, 0.1);
+}
+
+/* System Grid Matrix Engine */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+    gap: 20px;
+}
+
+/* Card Component Configuration */
+.project-card {
+    background: var(--light-bg);
+    border-radius: 4px;
+    transition: 0.3s;
+    display: flex;
+}
+.card-inner {
+    padding: 2rem 1.75rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.project-card:hover {
+    transform: translateY(-7px);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.open-folder {
+    color: var(--accent);
+    font-size: 2.2rem;
+}
+.project-links {
+    display: flex;
+    gap: 16px;
+}
+.project-links a {
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+.project-links a:hover {
+    color: var(--accent);
+    transform: translateY(-3px);
+}
+
+.project-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+.project-card:hover .project-title {
+    color: var(--accent);
+}
+
+.project-desc {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 24px;
+    line-height: 1.5;
+    flex-grow: 1; /* Aligns framework box baselines precisely */
+}
+
+/* --- New Styled Box Structures for Technical Framework Tags --- */
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; /* Snug spacing for multi-row wrap steps */
+    list-style: none;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--accent); /* Uses neon accents to pull recruiters eyes straight to your stack */
+    margin-top: auto;
+}
+.tech-tag {
+    border: 1px solid var(--accent); /* Clear clean box framing */
+    padding: 4px 10px;
+    border-radius: 4px;
+    background: rgba(100, 255, 218, 0.02); /* Slight interior layout tint tinting */
+    letter-spacing: -0.2px;
+}
+
+/* Hidden Utility Rule for Filtering Engine */
+.project-card.filter-hide {
+    display: none !important;
+}
+
+/* Recruiter Direct Action Hotbar */
+.recruiter-bar {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(17, 34, 64, 0.95);
+    border: 1px solid var(--accent);
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 1000;
+    box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
+    width: max-content;
+    max-width: 92vw;
+}
+.recruiter-bar p {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-primary);
+}
+.text-accent {
+    color: var(--accent);
+}
+.bar-actions {
+    display: flex;
+    gap: 10px;
+}
+.bar-btn {
+    padding: 6px 14px;
+    font-size: 0.78rem;
+    font-family: var(--font-mono);
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: 0.3s;
+}
+.bar-btn.contact {
+    border: 1px solid var(--accent);
+    color: var(--accent);
+}
+.bar-btn.contact:hover {
+    background: var(--accent-glow);
+}
+.bar-btn.resume {
+    border: 1px solid var(--text-secondary);
+    color: var(--text-secondary);
+}
+.bar-btn.resume:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+/* Glitch Heading Layout Animation Parameters */
+.glitch { position: relative; }
+.glitch::before, .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: var(--bg-color);
+}
+.glitch::before {
+    left: 2px;
+    text-shadow: -1px 0 red;
+    clip: rect(24px, 550px, 90px, 0);
+    animation: glitch-anim-2 3s infinite linear alternate-reverse;
+}
+@keyframes glitch-anim-2 {
+    0% { clip: rect(120px, 9999px, 15px, 0); }
+    100% { clip: rect(65px, 9999px, 100px, 0); }
+}
+
+/* --- Mobile Break Layout Logic (Completely removes invisible scrolling side menus) --- */
+@media (max-width: 600px) {
+    .filter-wrapper {
+        flex-direction: column; /* Stacks layout elements linearly and cleanly downward */
+        gap: 8px;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    .filter-btn {
+        width: 100%; /* Spans full dimension uniformly */
+        justify-content: center; /* Aligns labels to exact structural center lines */
+        border: 1px solid var(--light-bg);
+    }
+}
+
+@media (max-width: 480px) {
+    .recruiter-bar p {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .recruiter-bar {
+        display: none;
+    }
+}
+/* --- Footer Alignment & Spacing --- */
+.page-footer {
+    text-align: center;
+    padding: 40px 20px 80px 20px; /* Extra bottom padding so the text clears the sticky recruiter bar */
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+/* Adjust layout spacing on smaller mobile devices */
+@media (max-width: 480px) {
+    .page-footer {
+        padding: 30px 20px 100px 20px; /* Gives even more breathing room on tiny phone screens */
+    }
+}

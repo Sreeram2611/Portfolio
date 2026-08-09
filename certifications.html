@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications | Sreeram Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="cert-style.css">
+</head>
+<body>
+
+    <div class="page-container">
+        <!-- Back Link -->
+        <a href="index.html#certifications" class="back-link">
+            <i class="fas fa-arrow-left"></i> Back to Main Portfolio
+        </a>
+
+        <header class="page-header">
+            <h1 class="glitch" data-text="Credential Inventory">Credential Inventory</h1>
+            <p class="subtitle">A categorized archive of my technical certifications, training, and academic achievements.</p>
+        </header>
+
+        <!-- Filter Controls -->
+        <div class="filter-wrapper">
+            <button class="filter-btn active" data-filter="all">
+                <i class="fas fa-th-large"></i> All (<span class="count">0</span>)
+            </button>
+            <button class="filter-btn" data-filter="security">
+                <i class="fas fa-shield-alt"></i> Cybersecurity (<span class="count">0</span>)
+            </button>
+            <button class="filter-btn" data-filter="development">
+                <i class="fas fa-code"></i> Development & DSA (<span class="count">0</span>)
+            </button>
+            <button class="filter-btn" data-filter="academic">
+                <i class="fas fa-graduation-cap"></i> Academic & Other (<span class="count">0</span>)
+            </button>
+        </div>
+
+        <!-- Filterable Grid -->
+        <main class="cert-grid">
+
+            <!-- Card 1: Google Cybersecurity -->
+            <div class="cert-card" data-category="security">
+                <div class="cert-header">
+                    <i class="fab fa-google cert-icon"></i>
+                    <div class="cert-info">
+                        <h3>Google Cybersecurity</h3>
+                        <p>Issued: Mar 2026</p>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <p class="cert-issuer">Google</p>
+                    <a href="https://coursera.org/share/0756a7d040fcce9004f659c57e014077" target="_blank" rel="noopener noreferrer" class="cert-link">
+                        Verify Credential <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 2: Apoorv CTF -->
+            <div class="cert-card" data-category="security">
+                <div class="cert-header">
+                    <i class="fas fa-certificate cert-icon"></i>
+                    <div class="cert-info">
+                        <h3>Apoorv CTF Certificate</h3>
+                        <p>Issued: Mar 2025</p>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <p class="cert-issuer">IIIT Kottayam</p>
+                    <a href="Assets/certificates/CTF Certificate.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
+                        View Certificate <i class="far fa-file-pdf"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 3: Prodigy InfoTech -->
+            <div class="cert-card" data-category="security">
+                <div class="cert-header">
+                    <i class="fas fa-award cert-icon"></i>
+                    <div class="cert-info">
+                        <h3>Cyber Security Internship</h3>
+                        <p>Issued: Jul 2025</p>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <p class="cert-issuer">Prodigy InfoTech</p>
+                    <a href="https://prodigyinfotech.dev/verify?cin=PIT/JUN25/03013" target="_blank" rel="noopener noreferrer" class="cert-link">
+                        View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 4: Java Programming -->
+            <div class="cert-card" data-category="development">
+                <div class="cert-header">
+                    <i class="fas fa-terminal cert-icon"></i>
+                    <div class="cert-info">
+                        <h3>Java Programming for Beginners</h3>
+                        <p>Issued: Nov 2025</p>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <p class="cert-issuer">Coursera : IBM</p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/H4QKZRESFWUH" target="_blank" rel="noopener noreferrer" class="cert-link">
+                        View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 5: DSA -->
+            <div class="cert-card" data-category="development">
+                <div class="cert-header">
+                    <i class="fas fa-terminal cert-icon"></i>
+                    <div class="cert-info">
+                        <h3>Data Structures and Algorithms</h3>
+                        <p>Issued: Nov 2025</p>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <p class="cert-issuer">Coursera : Microsoft</p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/PD29OZEHSWAK" target="_blank" rel="noopener noreferrer" class="cert-link">
+                        View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 6: Ransomware Awareness -->
+            <div class="cert-card" data-category="security">
+                <div class="cert-header">
+                    <i class="fas fa-shield-virus cert-icon"></i>
+                    <div class="cert-info">
+                        <h3>Cybersecurity Awareness: Ransomware</h3>
+                        <p>Issued: Feb 2025</p>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <p class="cert-issuer">LinkedIn Learning</p>
+                    <a href="Assets/certificates/CertificateOfCompletion Ransomware.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">
+                        View Certificate <i class="far fa-file-pdf"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 7: C++ OOP -->
+            <div class="cert-card" data-category="development">
+                <div class="cert-header">
+                    <i class="fas fa-certificate cert-icon"></i>
+                    <div class="cert-info">
+                        <h3>Introduction to Object-Oriented Programming in C++</h3>
+                        <p>Issued: May 2025</p>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <p class="cert-issuer">Coursera : University of London</p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/2214DKKCLMQL" target="_blank" rel="noopener noreferrer" class="cert-link">
+                        View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 8: MongoDB -->
+            <div class="cert-card" data-category="development">
+                <div class="cert-header">
+                    <i class="fas fa-certificate cert-icon"></i>
+                    <div class="cert-info">
+                        <h3>MongoDB Basics for Students</h3>
+                        <p>Issued: Jul 2025</p>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <p class="cert-issuer">MongoDB</p>
+                    <a href="https://learn.mongodb.com/c/35zO4oqGQJCdPgNIa3vuxQ" target="_blank" rel="noopener noreferrer" class="cert-link">
+                        View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 9: SRMIST Mentorship -->
+            <div class="cert-card" data-category="academic">
+                <div class="cert-header">
+                    <i class="fas fa-award cert-icon"></i>
+                    <div class="cert-info">
+                        <h3>Mentorship Certificate</h3>
+                        <p>Issued: Feb 2025</p>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <p class="cert-issuer">SRMIST Trichy</p>
+                    <a href="Assets/certificates/Mentorship Certificate.webp" target="_blank" rel="noopener noreferrer" class="cert-link">
+                        View Certificate <i class="far fa-image"></i>
+                    </a>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="cert-script.js"></script>
+    <footer class="page-footer">
+    COPYRIGHT &copy; 2026 Sreeram Palani.
+</footer>
+</body>
+</html>
